@@ -15,5 +15,4 @@ public class uzduotis1_3 {
         System.out.println("Jūsų įvestų skaičių suma yra " + suma);
         System.out.println("Jūsų įvestų skaičių skirtumas yra " + skirtumas);
     }
-
 }
