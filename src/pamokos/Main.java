@@ -10,6 +10,8 @@ import uzduotis2_2.Uzduotis2_2;
 import uzduotis2_3.Uzduotis2_3;
 import uzduotis2_4.Uzduotis2_4;
 import uzduotis2_5.Uzduotis2_5;
+import uzduotis2_6.Uzduotis2_6;
+import uzduotis2_7.Uzduotis2_7;
 //Shift+ F6
 
 import java.util.Scanner;
@@ -21,7 +23,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Iveskite skaiciu nuo 1 iki 10");
+        System.out.println("Iveskite skaiciu nuo 1 iki 11");
         Scanner nuskaitymas = new Scanner(System.in);
         int sk = nuskaitymas.nextInt();
         switch (sk) {
@@ -54,6 +56,16 @@ public class Main {
                 break;
             case (10):
                 Uzduotis2_5 uzduotis2_5 = new Uzduotis2_5();
+                System.out.println("Įvesk masyvo ilgį. Tai turi būti sveikasis skaičius.");
+                Scanner sc = new Scanner(System.in);
+                uzduotis2_5.nuskaitymas(sc.nextInt());
+                uzduotis2_5.skaiciavimas();
+                break;
+            case (11):
+                Uzduotis2_6 uzduotis2_6 = new Uzduotis2_6();
+                break;
+            case (12):
+                Uzduotis2_7 uzduotis2_7 = new Uzduotis2_7();
                 break;
         }
     }
